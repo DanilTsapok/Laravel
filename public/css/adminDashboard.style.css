@@ -1,0 +1,92 @@
+table {
+    background-color: white;
+    border: none;
+    border-spacing: 0;
+    border-radius: 20px;
+    padding: 20px;
+}
+thead {
+    border-radius: 20px;
+    height: 80px;
+    background-color: orange;
+}
+.btn {
+    width: 200px;
+    height: 50px;
+    background-color: white;
+    color: orange;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.btn:hover {
+    cursor: pointer;
+    background-color: orange;
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+td {
+    border-bottom: 2px solid orange;
+    padding: 10px;
+    gap: 20px;
+    /* vertical-align: middle; */
+}
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px 0px;
+    gap: 10px;
+}
+img {
+    width: 100%;
+}
+.notification {
+    height: 150px;
+    background-color: white;
+    position: absolute;
+    top: 120px;
+    right: 10px;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 20px;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+.notification.show {
+    opacity: 1;
+    visibility: visible;
+}
+td .action {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.actionBtn {
+    width: 80px;
+    height: 40px;
+    cursor: pointer;
+}
+.actionBtn:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+}
+.edit {
+    border: 1px solid orange;
+    border-radius: 5px;
+    background-color: lightyellow;
+    color: black;
+}
+.delete {
+    border: 1px solid red;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    margin-top: 10px;
+}
